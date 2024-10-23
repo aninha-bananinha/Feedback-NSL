@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação da Escola NSL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Formulário de Avaliação da Escola NSL</h1>
+    </header>
+
+    <section>
+        <article>
+            <form id="feedbackForm">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="feedback">Avaliação:</label>
+                <textarea id="feedback" name="feedback" rows="4" required></textarea><br>
+
+                <button type="submit" class="btn">Enviar Avaliação</button>
+            </form>
+            <p id="thankYouMessage" style="display:none;">Obrigado por enviar sua avaliação!</p>
+        </article>
+
+        <section id="feedbackListSection">
+            <h2>Feedbacks Enviados</h2>
+            <ul id="feedbackList"></ul>
+        </section>
+    </section>
+
+    <footer>
+        <p>Escola NSL - Formulário de Avaliação</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
